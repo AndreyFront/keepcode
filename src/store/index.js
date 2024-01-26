@@ -9,6 +9,9 @@ useStore = defineStore('store', () => {
     activeTab = ref(1),
     getCompletedLocalTasks = computed(() => {
         return tasks.value.filter(task => task.completed)
+    }),
+    getAwaitLocalTasks = computed(() => {
+        return tasks.value.filter(task => !task.completed)
     })
 
     async function getRemoteTasks() {
@@ -80,6 +83,7 @@ useStore = defineStore('store', () => {
         activeTab,
 
         getCompletedLocalTasks,
+        getAwaitLocalTasks,
 
         getRemoteTasks,
         getLocalTasks,

@@ -1,5 +1,6 @@
 <script setup>
     import MyHeader from '@/components/MyHeader.vue'
+    import MyFooter from '@/components/MyFooter.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@
         <div class="main-layout__page">
             <slot />
         </div>
+        <MyFooter />
     </div>
 </template>
 

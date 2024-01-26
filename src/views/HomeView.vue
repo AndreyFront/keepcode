@@ -17,6 +17,8 @@
                 tasks.value = newValue
             } else if (store.activeTab === 2) {
                 tasks.value = store.getCompletedLocalTasks
+            } else if (store.activeTab === 3) {
+                tasks.value = store.getAwaitLocalTasks
             }
         },
         { deep: true }
@@ -30,8 +32,8 @@
             tasks.value = store.tasks
         } else if (newValue === 2) {
             tasks.value = store.getCompletedLocalTasks
-        } else {
-            
+        } else if (newValue === 3) {
+            tasks.value = store.getAwaitLocalTasks
         }
     })
 
@@ -42,8 +44,8 @@
 
 <template>
     <div class="home-view" v-auto-animate>
-        <MyTasks v-if="activeTab !== 3 && !store.loading" :tasks="tasks" />
-        <MyForm v-if="activeTab === 3" />
+        <MyTasks v-if="activeTab !== 4 && !store.loading" :tasks="tasks" />
+        <MyForm v-if="activeTab === 4" />
         <MyPreloader :class="{ 'active': store.loading }" />
     </div>
 </template>
