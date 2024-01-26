@@ -1,0 +1,51 @@
+@import '_vars';
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    flex: 1 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: $color-p;
+    text-decoration: none;
+}
+
+.title-reset {
+    margin: 0;
+}
+
+.link-reset {
+    text-decoration: none;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn-reset {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,30 @@
+// Colors
+
+:root {
+    --color-p: #fff;
+    --color-p-01: rgba(255, 255, 255, 0.1);
+    --color-p-03: rgba(255, 255, 255, 0.3);
+    --color-s: #1b1b1f;
+    --color-t: #646cff;
+    --color-q: #32363f;
+    --color-error: #ff5d5d;
+
+    --tr-time-p: 0.3s;
+    --font-p: Inter, sans-serif;
+}
+
+$color-p: var(--color-p);
+$color-p-01: var(--color-p-01);
+$color-p-03: var(--color-p-03);
+$color-s: var(--color-s);
+$color-t: var(--color-t);
+$color-q: var(--color-q);
+$color-error: var(--color-error);
+
+// Fonts
+
+$font-p: var(--font-p);
+
+// Other
+
+$tr-time-p: var(--tr-time-p);
